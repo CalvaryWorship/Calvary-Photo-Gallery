@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calvary Worship Photo Gallery</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    Calvary Worship Photo Gallery
+    <div style="font-size:13px; font-weight:300; opacity:0.8; margin-top:4px;">
+        Indian National Full Gospel Church Raniamba
+    </div>
+</header>
+
+<div class="container">
+    <button id="backBtn" onclick="showFolders()">⬅ Back</button>
+
+    <!-- FOLDER LIST -->
+    <div id="folderView">
+
+        <div class="folder" onclick="openFolder('OldChurch')" id="folder-OldChurch">
+    <img>
+    <p>Old Church</p>
+</div>
+
+<div class="folder" onclick="openFolder('CWT At Moghvan')" id="folder-CWT At Moghvan">
+    <img>
+    <p>CWT At Moghvan</p>
+</div>
+
+<div class="folder" onclick="openFolder('CWT At Seminar Centre Lakhali')" id="folder-CWT At Seminar Centre Lakhali">
+    <img>
+    <p>CWT At Seminar Centre Lakhali</p>
+</div>
+
+<div class="folder" onclick="openFolder('CWT At Verakui')" id="folder-CWT At Verakui">
+    <img>
+    <p>CWT At Verakui</p>
+</div>
+
+<div class="folder" onclick="openFolder('CWT At Dolvan')" id="folder-CWT At Dolvan">
+    <img>
+    <p>CWT At Dolvan</p>
+</div>
+
+
+    </div>
+
+    <!-- PHOTOS INSIDE A FOLDER -->
+    <div id="photoView" style="display:none;"></div>
+</div>
+
+<!-- FULL SCREEN VIEWER -->
+<div id="fullscreenView">
+    <span id="closeFull" onclick="closeFull()">✖</span>
+    <button id="prevBtn" onclick="prevImage()">⟨</button>
+    <img id="fullImage" src="">
+    <button id="nextBtn" onclick="nextImage()">⟩</button>
+</div>
+
+</body>
+</html>

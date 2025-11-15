@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Folder & Photo Items */
+.folder, .photo {
+    width: 150px;
+    margin: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+}
+
+.folder img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Photo Grid Items */
+.photo img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Back Button */
+#backBtn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 15px;
+}
+
+/* Folder View Background */
+#folderView {
+    background: url("assets/OldChurch/1.jpg") center/cover no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80vh;
+}
+
+/* Folder Card */
+.folder {
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform .2s ease;
+}
+
+.folder:hover {
+    transform: translateY(-5px);
+}
+
+/* Fullscreen Viewer */
+#fullscreenView {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+#fullscreenView img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Close Button */
+#closeFull {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    padding: 8px 12px;
+}
+
+/* Next / Previous Buttons */
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+#prevBtn:hover, #nextBtn:hover, #closeFull:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+#prevBtn { left: 20px; }
+#nextBtn { right: 20px; }
+
+/* Responsive Mode */
+@media (max-width: 600px) {
+    .folder, .photo {
+        width: 45%;
+        margin: 10px 2%;
+    }
+
+    .folder img,
+    .photo img {
+        width: 100%;
+        height: 140px;
+    }
+
+    #prevBtn, #nextBtn {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    #closeFull {
+        font-size: 24px;
+        padding: 6px 10px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 12px 0;
+    }
+}
