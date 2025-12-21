@@ -67,7 +67,39 @@ const folders = {
     "assets/CWT At Dolvan/54.jpg",
     "assets/CWT At Dolvan/55.jpg",
     "assets/CWT At Dolvan/56.jpg"
+  ],
+
+  "CWT in silvar jubali at Taparvada": [
+    "assets/CWT in silvar jubali at Taparvada/57.jpg",
+    "assets/CWT in silvar jubali at Taparvada/58.jpg"
+    ,
+    "assets/CWT in silvar jubali at Taparvada/59.jpg",
+    "assets/CWT in silvar jubali at Taparvada/60.jpg",
+    "assets/CWT in silvar jubali at Taparvada/61.jpg",
+    "assets/CWT in silvar jubali at Taparvada/62.jpg",
+    "assets/CWT in silvar jubali at Taparvada/63.jpg",
+    "assets/CWT in silvar jubali at Taparvada/64.jpg",
+    "assets/CWT in silvar jubali at Taparvada/65.jpg",
+    "assets/CWT in silvar jubali at Taparvada/66.jpg",
+    "assets/CWT in silvar jubali at Taparvada/67.jpg",
+    "assets/CWT in silvar jubali at Taparvada/68.jpg",
+    "assets/CWT in silvar jubali at Taparvada/69.jpg",
+    "assets/CWT in silvar jubali at Taparvada/70.jpg",
+    "assets/CWT in silvar jubali at Taparvada/71.jpg",
+    "assets/CWT in silvar jubali at Taparvada/72.jpg",
+    "assets/CWT in silvar jubali at Taparvada/73.jpg",
+    "assets/CWT in silvar jubali at Taparvada/74.jpg",
+    "assets/CWT in silvar jubali at Taparvada/75.jpg",
+    "assets/CWT in silvar jubali at Taparvada/76.jpg",
+    "assets/CWT in silvar jubali at Taparvada/77.jpg",
+    "assets/CWT in silvar jubali at Taparvada/78.jpg",
+    "assets/CWT in silvar jubali at Taparvada/79.jpg",
+    "assets/CWT in silvar jubali at Taparvada/80.jpg",
+    "assets/CWT in silvar jubali at Taparvada/81.jpg",
+    "assets/CWT in silvar jubali at Taparvada/82.jpg",
+    "assets/CWT in silvar jubali at Taparvada/83.jpg"
   ]
+  
 };
 
 let currentPhotos = [];
@@ -130,4 +162,5 @@ window.onload = function() {
         }
     });
 };
+
 
