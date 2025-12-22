@@ -71,8 +71,7 @@ const folders = {
 
   "CWT in silvar jubali at Taparvada": [
     "assets/CWT in silvar jubali at Taparvada/57.jpg",
-    "assets/CWT in silvar jubali at Taparvada/58.jpg"
-    ,
+    "assets/CWT in silvar jubali at Taparvada/58.jpg" ,
     "assets/CWT in silvar jubali at Taparvada/59.jpg",
     "assets/CWT in silvar jubali at Taparvada/60.jpg",
     "assets/CWT in silvar jubali at Taparvada/61.jpg",
@@ -162,5 +161,6 @@ window.onload = function() {
         }
     });
 };
+
 
 
